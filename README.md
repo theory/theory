@@ -1,10 +1,10 @@
-### Hi there 👋
+### Hello fellow human 👋🏻
 
 Creator of
 *   [Sqitch](https://sqitch.org/)
 *   [PGXN](https://pgxn.org)
 
-![theory’s Github Metrics](./github-metrics.svg)
+![theory’s Github Metrics](https://github.com/theory/theory/blob/main/github-metrics.svg)
 
 <!--
 **theory/theory** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

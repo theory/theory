@@ -19,17 +19,20 @@ jobs:
           user: theory
           template: classic
           config_gemoji: yes # use additional non-unicode emoji
+          config_timezone: America/New_York
           retries: 3
           retries_delay: 300
           use_prebuilt_image: yes # faster execution
 
           # base
           base: header, activity, community, repositories, metadata
-          repositories_forks: yes
+          repositories_forks: no
+          repositories_affiliations: owner, collaborator
+          repositories_skipped: theory/theory
 
           # The isocalendar plugin displays an isometric view of your commits calendar, along with a few additional stats like current streak and commit average per day.
           plugin_isocalendar: yes
-          # plugin_isocalendar_duration: full-year # Display full year instead of half year
+          plugin_isocalendar_duration: full-year # Display full year instead of half year
 
           # The languages plugin displays which programming languages you use the most across all your repositories.
           plugin_languages: yes
@@ -38,14 +41,14 @@ jobs:
           # plugin_languages_colors: "0:orange, javascript:#ff0000, ..." # Make most used languages orange and JavaScript red
           plugin_languages_details: bytes-size, percentage             # Additionally display total bytes size and percentage
           # plugin_languages_threshold: 2%                               # Hides all languages less than 2%
+          plugin_languages_sections: most-used, recently-used
 
           # The coding habits plugin display metrics based on your recent activity, such as active hours or languages recently used.
           plugin_habits: yes
-          plugin_habits_from: 1000      # Use 1000 events to compute habits
+          plugin_habits_from: 200       # Use 200 events to compute habits
           plugin_habits_days: 90        # Keep only events from last 14 days
           plugin_habits_facts: yes      # Display facts section
           plugin_habits_charts: yes     # Display charts section
-          config_timezone: America/New_York
 
           # The stars plugin displays your recently starred repositories.
           plugin_stars: yes
@@ -54,11 +57,12 @@ jobs:
           # The reactions plugin displays overall reactions on your recent issues and issue comments.
           plugin_reactions: yes
           plugin_reactions_limit: 200                 # Compute reactions over last 200 issue comments
-          plugin_reactions_days: 90                   # Compute reactions on issue comments posted less than 14 days ago
-          plugin_reactions_details: count, percentage # Display reactions count and percentage
+          plugin_reactions_days: 90                   # Compute reactions on issue comments posted less than 90 days ago
+          plugin_reactions_details: count # Display reactions count but not percentage
 
           # The followup plugin displays the ratio of open/closed issues and the ratio of open/merged pull requests across all your repositories, which shows if they're well-maintained or not.
           plugin_followup: yes
+          plugin_followup_sections: repositories, user
 
           # The lines of code plugin displays the number of lines of code you have added and removed across all of your repositories.
           plugin_lines: yes
