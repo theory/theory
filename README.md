@@ -1,9 +1,5 @@
 ### Hello fellow human 👋🏻
 
-Creator of
-*   [Sqitch](https://sqitch.org/)
-*   [PGXN](https://pgxn.org)
-
 ![theory’s Github Metrics](https://github.com/theory/theory/blob/main/github-metrics.svg)
 
 <!--

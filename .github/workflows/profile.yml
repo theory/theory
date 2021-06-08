@@ -72,3 +72,11 @@ jobs:
 
           # The stargazers plugin displays your stargazers evolution across all of your repositories over the last two weeks.
           plugin_stargazers: yes
+
+          plugin_rss: yes
+          plugin_rss_source: https://justatheory.com/feed.xml  # RSS feed
+          plugin_rss_limit: 6
+
+          plugin_notable: yes
+          plugin_notable_filter: stars:>500 # Only display repositories with 500 stars or more (syntax based on GitHub search query)
+          plugin_notable_repositories: yes     # Display repositories name instead of only organization name
