@@ -431,7 +431,7 @@
             </section>
             <section class="column">
                 <h3 class="field">Recently used languages</h3>
-                <small>estimation from 1.56mb of code in 1113 edited files across 236 commits over last 12 days</small>
+                <small>estimation from 1.56mb of code in 1113 edited files across 236 commits over last 13 days</small>
                 <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="460" height="8">
                     <mask id="languages-bar">
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
@@ -543,7 +543,7 @@
                         <span class="name">@pgmq</span>
                     </div>
                     <div class="organization contribution  ">
-                        <img class="organization avatar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOcOnfpfwAGfgLYttYINwAAAABJRU5ErkJggg==" width="16" height="16" />
+                        <img class="organization avatar" src="data:image/png;base64,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" width="16" height="16" />
                         <span class="name">@paradedb</span>
                     </div>
                 </div>
@@ -3337,7 +3337,7 @@
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 27 Sept 2025, 20:47:08 (timezone America/New_York) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 28 Sept 2025, 08:43:47 (timezone America/New_York) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
