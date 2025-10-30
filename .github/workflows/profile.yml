@@ -5,7 +5,7 @@ on:
   schedule: [{ cron: "30 0,12 * * *" }]
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
-  push: { branches: ["main"] }
+  push: { branches: ["*"] }
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -23,6 +23,7 @@ jobs:
           retries: 3
           retries_delay: 300
           use_prebuilt_image: yes # faster execution
+          config_display: columns
 
           # base
           base: header, activity, community, repositories, metadata
@@ -56,9 +57,8 @@ jobs:
 
           # The reactions plugin displays overall reactions on your recent issues and issue comments.
           plugin_reactions: yes
-          plugin_reactions_limit: 200                 # Compute reactions over last 200 issue comments
-          plugin_reactions_days: 90                   # Compute reactions on issue comments posted less than 90 days ago
-          plugin_reactions_details: count # Display reactions count but not percentage
+          plugin_reactions_limit: 1000                # Compute reactions over last 1000 issue comments
+          plugin_reactions_days: 30                   # Compute reactions on issue comments posted less than 30 days ago
 
           # The followup plugin displays the ratio of open/closed issues and the ratio of open/merged pull requests across all your repositories, which shows if they're well-maintained or not.
           plugin_followup: yes
@@ -79,4 +79,4 @@ jobs:
 
           plugin_notable: yes
           plugin_notable_filter: stars:>50 # Only display repositories with 50 stars or more (syntax based on GitHub search query)
-          plugin_notable_repositories: no     # Display repositories name instead of only organization name
+          plugin_notable_repositories: yes     # Display repositories name instead of only organization name
