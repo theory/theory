@@ -36,7 +36,7 @@ jobs:
 
           # The languages plugin displays which programming languages you use the most across all your repositories.
           plugin_languages: yes
-          plugin_languages_ignored: c, c++, bison, raku, jinja            # List of languages to ignore
+          # plugin_languages_ignored: c, c++, bison, raku, jinja         # List of languages to ignore
           # plugin_languages_skipped: my-test-repo                       # List of repositories to skip
           # plugin_languages_colors: "0:orange, javascript:#ff0000, ..." # Make most used languages orange and JavaScript red
           plugin_languages_details: bytes-size, percentage               # Additionally display total bytes size and percentage
